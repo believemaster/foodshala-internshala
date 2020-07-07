@@ -12,7 +12,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 		<div class="col-md-4">
 
-			<h3 class="my-3"><?php echo ($item['name']) ?></h3>
+			<h3 class="my-3"><?php echo ($item['item_name']) ?></h3>
 			<p><?php echo ($item['description']); ?></p>
 			<h3 class="my-3">Details</h3>
 			<ul>
