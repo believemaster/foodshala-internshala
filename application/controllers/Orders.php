@@ -46,7 +46,7 @@ class Orders extends CI_Controller
 
 	public function ordered()
 	{
-		if (!$this->session->userdata('logged_in') || ($this->session->userdata('role') === "Restaurant")) {
+		if (!$this->session->userdata('logged_in') || ($this->session->userdata('role') === "res")) {
 			show_404();
 		}
 
@@ -59,7 +59,7 @@ class Orders extends CI_Controller
 
 	public function allOrders()
 	{
-		if (!$this->session->userdata('logged_in') || ($this->session->userdata('role') === "User")) {
+		if (!$this->session->userdata('logged_in') || ($this->session->userdata('role') === "user")) {
 			show_404();
 		}
 
@@ -72,7 +72,7 @@ class Orders extends CI_Controller
 
 	public function confirm($id)
 	{
-		if (!$this->session->userdata('logged_in') || ($this->session->userdata('role') === "User")) {
+		if (!$this->session->userdata('logged_in') || ($this->session->userdata('role') === "user")) {
 			show_404();
 		}
 
@@ -84,7 +84,7 @@ class Orders extends CI_Controller
 
 	public function cancel($id)
 	{
-		if (!$this->session->userdata('logged_in') || ($this->session->userdata('role') === "User")) {
+		if (!$this->session->userdata('logged_in') || ($this->session->userdata('role') === "user")) {
 			show_404();
 		}
 
